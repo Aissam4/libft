@@ -175,3 +175,5 @@ Bonus functions to implement
 | ``ft_lstclear`` | Deletes a given element and every element after that |
 | ``ft_lstiter`` | Applies a function to the content of every node of the linked list |
 | ``ft_lstmap`` | Applies function to a copy of the list, freeing when necessary |
+
+![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
