@@ -176,4 +176,4 @@ Bonus functions to implement
 | ``ft_lstiter`` | Applies a function to the content of every node of the linked list |
 | ``ft_lstmap`` | Applies function to a copy of the list, freeing when necessary |
 
-![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg) ![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)
+![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)                  ![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)
