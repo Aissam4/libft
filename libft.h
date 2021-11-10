@@ -6,7 +6,7 @@
 /*   By: abarchil <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 10:44:21 by abarchil          #+#    #+#             */
-/*   Updated: 2021/11/03 10:44:39 by abarchil         ###   ########.fr       */
+/*   Updated: 2021/11/10 23:14:36 by abarchil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@
 # include	<stddef.h>
 # include	<unistd.h>
 # include	<limits.h>
-
+# include	<stdio.h>
+# include	<stdarg.h>
 typedef struct s_list
 {
 	void			*content;
@@ -34,6 +35,7 @@ int		ft_atoi(const char *str);
 void	ft_bzero(void *S, size_t n);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	*ft_calloc(size_t count, size_t size);
 int		ft_isalpha(int c);
@@ -63,4 +65,20 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+int		ft_convert_hex(size_t nb);
+int		ft_convert_hex_upper(unsigned int nb);
+int		ft_chose_convert(va_list arg, char c);
+int		ft_printf(const char *format, ...);
+void	ft_unsgined_putnbr_fd(unsigned int n, int fd);
+int		ft_nbr_length(int n);
+int		ft_unsigned_nbr_length(unsigned int n);
+int		ft_hex_length(int n);
+int		ft_convert_u(va_list arg);
+int		ft_convert_p(va_list arg);
+int		ft_convert_xx(va_list arg);
+int		ft_convert_x(va_list arg);
+int		ft_convert_di(va_list arg);
+int		ft_convert_s(va_list arg);
+int		ft_convert_c(va_list arg);
+int		ft_str_search(char *s, char c);
 #endif
